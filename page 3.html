@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Social Media</title>
+    <link rel="shortcut icon" href="globe.png">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validate(){
+            var username = document.signup.uname.value;
+            var name = document.signup.name.value;
+            var dateofbirth = document.signup.dob.value;
+            var password = document.signup.pwd.value
+            if(username==""||name ==""||dateofbirth==""||password=="")
+            {
+                alert("Fill all the fields")
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <h1>
+                    Twitter
+                </h1>
+            </div>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page 1.html">Instagram</a></li>
+                <li><a href="page 2.html">Tik Tok</a></li>
+            </ul>
+        </header>
+        <div class = content>
+            <form name="signup">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <table class="index-table">
+                        <tr>
+                            <td align="right"><label>Username:</label></td>
+                            <td><input type="text" name="uname"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label>Name:</label></td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>DOB:</label></td>
+                            <td><input type="date" name="dob"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Password:</label></td>
+                            <td><input type ="password" name = "pwd"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="button" value="Submit" onclick="validate();"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            Copyright &copy; Mason Bongo & Daniel Reyna
+        </footer>
+    </body>
+</html>
